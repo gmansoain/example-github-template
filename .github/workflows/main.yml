@@ -10,7 +10,7 @@ jobs:
       run: |
         curl --location --globoff --request PUT 'https://api.github.com/repos/gmansoain/example-github-1/environments/Development' \
         --header 'Accept: application/vnd.github+json' \
-        --header 'Authorization: Bearer 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' \
+        --header 'Authorization: Bearer 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' \
         --header 'X-GitHub-Api-Version: 2022-11-28' \
         --header 'Content-Type: application/json' \
         --header 'Cookie: _octo=GH1.1.1633195661.1700442825; logged_in=no' \
