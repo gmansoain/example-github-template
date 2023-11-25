@@ -5,6 +5,7 @@ on:
 jobs:
   deleteAPI:
     runs-on: ubuntu-latest
+    environment: Development
     steps:
       # Install Node on the runner
       - uses: actions/setup-node@v4
