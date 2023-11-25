@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set Secrets
+      env:
+        GITHUB_TOKEN: ${{ GON_GITHUB_TOKEN }}
       run:  gh secret set MYSECRET --body GonGon
