@@ -6,21 +6,5 @@ jobs:
   createEnvironments:
     runs-on: ubuntu-latest
     steps:
-    - name: Create Dev Environment
-      run: |
-        curl --location --globoff --request PUT 'https://api.github.com/repos/gmansoain/example-github-1/environments/Development' \
-        --header 'Accept: application/vnd.github+json' \
-        --header 'Authorization: Bearer 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' \
-        --header 'X-GitHub-Api-Version: 2022-11-28' \
-        --header 'Content-Type: application/json' \
-        --header 'Cookie: _octo=GH1.1.1633195661.1700442825; logged_in=no' \
-        --data '{
-            "wait_timer":0,
-            "prevent_self_review":false,
-            "reviewers":[],
-            "deployment_branch_policy":{
-                "protected_branches":false,
-                "custom_branch_policies":true
-                }
-        }'
-            
+    - name: Set Secrets
+      run:  gh secret set MYSECRET --body GonGon
