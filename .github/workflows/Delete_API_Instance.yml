@@ -31,4 +31,4 @@ jobs:
           MULE_BG_ID: ${{ vars.MULE_BG_ID }}
           APP_ID: ${{ vars.APP_ID }}
         run: |
-          anypoint-cli-v4 api-mgr:api:delete --environment Development --organization $MULE_BG_ID $APP_ID
+          anypoint-cli-v4 api-mgr:api:delete --environment Development --organization $MULE_BG_ID 19132794
